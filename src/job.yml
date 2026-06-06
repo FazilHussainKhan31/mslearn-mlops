@@ -1,9 +1,5 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
-code: .
-command: >-
-  python train-model-parameters.py
-  --training_data ${{inputs.training_data}}
-  --reg_rate ${{inputs.reg_rate}}
+
 inputs:
   training_data:
     type: uri_file 
